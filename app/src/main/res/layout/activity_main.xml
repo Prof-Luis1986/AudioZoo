@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_pantalla"
+    tools:context=".MainActivity">
+
+    <!-- ImageButton para reproducir el sonido de tigre -->
+    <ImageButton
+        android:id="@+id/btntigre"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="Reproducir sonido de tigre"
+        android:src="@drawable/tigre"
+        android:scaleType="fitCenter"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/btnLeon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Botón de león -->
+    <ImageButton
+        android:id="@+id/btnLeon"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="Reproducir sonido de león"
+        android:src="@drawable/leon"
+        android:scaleType="fitCenter"
+        app:layout_constraintTop_toBottomOf="@+id/btntigre"
+        app:layout_constraintBottom_toTopOf="@+id/btnJirafa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Botón de jirafa -->
+    <ImageButton
+        android:id="@+id/btnJirafa"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="Reproducir sonido de jirafa"
+        android:src="@drawable/jirafa"
+        android:scaleType="fitCenter"
+        app:layout_constraintTop_toBottomOf="@+id/btnLeon"
+        app:layout_constraintBottom_toTopOf="@+id/btnHiena"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Botón de hiena -->
+    <ImageButton
+        android:id="@+id/btnHiena"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="Reproducir sonido de hiena"
+        android:src="@drawable/hiena"
+        android:scaleType="fitCenter"
+        app:layout_constraintTop_toBottomOf="@+id/btnJirafa"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
